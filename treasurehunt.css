@@ -1,0 +1,20 @@
+* {
+   text-align: center;
+}
+
+.table {
+    border: 5px, solid, brown;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+
+}
+body {
+  background-image: url(https://live.staticflickr.com/5762/23070209626_6656a9d322_b.jpg);
+  background-size: cover
+  background-position:center;
+  background-attachment: fixed;
+  }
+.actual, h1, h2, h3, h4, .list, footer {
+  background-color: white;
+}
