@@ -15,30 +15,36 @@
 //   }
 var dog =  Math.floor(Math.random() * 9)
    console.log (dog)
-   var cat =  Math.floor(Math.random() * 9)
-
-     if (cat===dog) {
+var cat =  Math.floor(Math.random() * 9)
+  if (cat===dog) {
        var cat = Math.floor(Math.random() * 9)
      }
    console.log (cat)
 
-     const treasure = (location) => {
-       if(dog === location) {
-         document.getElementById(location).innerHTML = "🐶"
-         alert ("You win!")
-     } else if (cat=== location) {
-         document.getElementById(location).innerHTML = "😾"
-         alert ("You lose!")
-     } else if (dog!=location) {
-       document.getElementById(location).innerHTML = "&#x1f332"
+const treasure = (location) => {
+  if(dog === location) {
+    document.getElementById(location).innerHTML = "🐶"
+    setTimeout(function() {
+    alert ("You win!")
+  }, 0)
+  } else if (cat=== location) {
+      document.getElementById(location).innerHTML = "😾"
+      setTimeout(function() {
+      alert ("You lose!")
+    }, 0)
+  } else if (dog!=location) {
+    document.getElementById(location).innerHTML = "&#x1f332"
 
-     }
-   }
-var counterVal = 8;
+  }
+}
+
+var counterVal = 7;
 function incrementClick() {
    updateDisplay(--counterVal);
 if(counterVal === 0) {
-       alert("You Lose! Press Reset Button")
+  setTimeout(function() {    
+  alert("You Lose! Press Reset Button")
+},0)
        location.reload()
    }
 }
