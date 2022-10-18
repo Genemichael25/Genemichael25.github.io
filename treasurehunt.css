@@ -1,5 +1,6 @@
 * {
    text-align: center;
+   color: white;
 }
 
 .table {
@@ -7,14 +8,21 @@
     display: flex;
     justify-content: center;
     font-size: 5rem;
-
 }
+
+.list {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
-  background-image: url(https://live.staticflickr.com/5762/23070209626_6656a9d322_b.jpg);
+  background-image: url(https://staticdelivery.nexusmods.com/images/952/6865133-1576915361.png);
   background-size: cover
   background-position:center;
   background-attachment: fixed;
   }
-.actual, h1, h2, h3, h4, .list, footer {
-  background-color: white;
+
+button {
+  background-color: black;
 }
